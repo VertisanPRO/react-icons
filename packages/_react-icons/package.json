@@ -1,0 +1,28 @@
+{
+    "name": "@vertisanpro/react-icons",
+    "version": "5.1.0-v1",
+    "description": "SVG React icons of popular icon packs using ES6 imports",
+    "author": "PadowYT2",
+    "contributors": [
+        "PadowYT2"
+    ],
+    "license": "MIT",
+    "main": "lib/cjs/index.js",
+    "module": "lib/esm/index.js",
+    "types": "lib/esm/index.d.ts",
+    "sideEffects": false,
+    "repository": {
+        "type": "git",
+        "url": "git+ssh://git@github.com:VertisanPRO/react-icons.git"
+    },
+    "bugs": {
+        "url": "https://github.com/VertisanPRO/react-icons/issues"
+    },
+    "homepage": "https://github.com/VertisanPRO/react-icons#readme",
+    "peerDependencies": {
+        "react": "*"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    }
+}

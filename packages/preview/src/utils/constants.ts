@@ -1,11 +1,11 @@
 export const BRAND_TITLE = "React Icons";
-export const BRAND_TITLE_MONO = "react-icons-ng";
+export const BRAND_TITLE_MONO = "react-icons";
 export const BRAND_DESCRIPTION =
   "Include popular icons in your React projects easily with react-icons.";
 export const BRAND_KEYWORDS = "React, Icons, Tree Shaking, SVG";
 
 export const HOME_USAGE = `
-import { FaBeer } from "@onemind-services-llc/react-icons-ng/fa";
+import { FaBeer } from "@vertisanpro/react-icons/fa";
 
 class Question extends React.Component {
   render() {
@@ -14,7 +14,7 @@ class Question extends React.Component {
 }`;
 
 export const HOME_USAGE_PACK = `
-import { FaBeer } from "@onemind-services-llc/react-icons-ng-pack/fa/FaBeer";
+import { FaBeer } from "@vertisanpro/react-icons-pack/fa/FaBeer";
 
 class Question extends React.Component {
   render() {

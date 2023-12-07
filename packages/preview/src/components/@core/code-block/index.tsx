@@ -2,7 +2,7 @@ import toast from "cogo-toast";
 import copy from "copy-to-clipboard";
 import { Highlight, themes } from "prism-react-renderer";
 import React from "react";
-import { IoClipboard } from "@onemind-services-llc/react-icons-ng/io5";
+import { IoClipboard } from "@vertisanpro/react-icons/io5";
 
 export default function CodeBlock({ code, language }) {
   const copyToClipboard = () => {

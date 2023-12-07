@@ -1,7 +1,7 @@
 import { useDarkTheme } from "@context/DarkThemeContext";
 import React from "react";
-import { BsFillSunFill } from "@onemind-services-llc/react-icons-ng/bs";
-import { BsFillMoonStarsFill } from "@onemind-services-llc/react-icons-ng/bs";
+import { BsFillSunFill } from "@vertisanpro/react-icons/bs";
+import { BsFillMoonStarsFill } from "@vertisanpro/react-icons/bs";
 
 export default function Container({ children }) {
   const { isDarkTheme, toggleTheme } = useDarkTheme();

@@ -4,24 +4,13 @@ function Badges() {
   return (
     <p>
       <a
-        href="https://github.com/Onemind-Services-LLC/react-icons-ng/pkgs/npm/react-icons-ng"
+        href="https://github.com/VertisanPRO/react-icons/pkgs/npm/react-icons"
         rel="noreferrer"
         target="_blank"
       >
         <img
-          src="https://img.shields.io/github/lerna-json/v/Onemind-Services-LLC/react-icons-ng/master?label=react-icons-ng"
-          alt="react-icons-ng version"
-        />
-      </a>
-      &emsp;
-      <a
-        href="https://github.com/Onemind-Services-LLC/react-icons-ng/pkgs/npm/react-icons-ng-pack"
-        rel="noreferrer"
-        target="_blank"
-      >
-        <img
-          src="https://img.shields.io/github/lerna-json/v/Onemind-Services-LLC/react-icons-ng/master?label=react-icons-ng-pack"
-          alt="react-icons-ng-pack version"
+          src="https://img.shields.io/github/lerna-json/v/VertisanPRO/react-icons/master?label=react-icons"
+          alt="react-icons version"
         />
       </a>
     </p>

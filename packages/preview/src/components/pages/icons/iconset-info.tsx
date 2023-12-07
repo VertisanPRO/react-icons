@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function IconSetInfo({ icon }) {
-  const { licenseUrl, license, projectUrl } = icon;
+  const { licenseUrl, license, projectUrl, id } = icon;
   return (
     <table className="iconset--info">
       <tbody>
@@ -19,6 +19,12 @@ export default function IconSetInfo({ icon }) {
             <a href={projectUrl} target="_blank" rel="noopener noreferrer">
               {projectUrl}
             </a>
+          </td>
+        </tr>
+        <tr>
+          <th>Folder</th>
+          <td>
+            <a>{id}</a>
           </td>
         </tr>
       </tbody>
