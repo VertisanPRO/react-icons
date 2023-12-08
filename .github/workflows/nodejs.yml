@@ -37,12 +37,12 @@ jobs:
         with:
           path: packages/_react-icons*/*.tgz
 
-      - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./packages/preview/out
-        if: contains(github.ref, 'tags/')
+      # - name: Deploy
+      #   uses: peaceiris/actions-gh-pages@v3
+      #   with:
+      #     github_token: ${{ secrets.GITHUB_TOKEN }}
+      #     publish_dir: ./packages/preview/out
+      #   if: contains(github.ref, 'tags/')
 
       - name: Release
         uses: ncipollo/release-action@v1
