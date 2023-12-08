@@ -32,9 +32,6 @@ async function main() {
       await taskCommon.writePackageJson(
         {
           name: "@vertisanpro/react-icons",
-          publishConfig: {
-            registry: "https://npm.pkg.github.com",
-          },
         },
         allOpt,
       );
@@ -60,9 +57,6 @@ async function main() {
       await taskCommon.writePackageJson(
         {
           name: "@vertisanpro/react-icons-pack",
-          publishConfig: {
-            registry: "https://npm.pkg.github.com",
-          },
         },
         filesOpt,
       );
