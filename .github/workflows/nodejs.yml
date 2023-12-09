@@ -57,4 +57,4 @@ jobs:
 
       - name: Publish react-icons
         if: contains(github.ref, 'tags/')
-        run: npm publish packages/_react-icons/*.tgz
+        run: npm publish packages/_react-icons/*.tgz --access public

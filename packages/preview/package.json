@@ -9,11 +9,11 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "version": "5.1.0-v2",
+  "version": "5.1.0-v3",
   "private": true,
   "dependencies": {
     "@loadable/component": "^5.15.3",
-    "@vertisanpro/react-icons": "^5.1.0-v2",
+    "@vertisanpro/react-icons": "^5.1.0-v3",
     "babel-plugin-codegen": "^4.1.5",
     "babel-plugin-macros": "^3.1.0",
     "basscss": "^8.1.0",
