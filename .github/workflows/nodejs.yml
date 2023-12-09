@@ -10,13 +10,13 @@ jobs:
     strategy:
       matrix:
         node-version: [18]
+    env:
+      NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
     steps:
       - uses: actions/checkout@v3
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
         with:
           node-version: ${{ matrix.node-version }}
 
@@ -57,6 +57,4 @@ jobs:
 
       - name: Publish react-icons
         if: contains(github.ref, 'tags/')
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NODE_AUTH_TOKEN }}
         run: npm publish packages/_react-icons/*.tgz
