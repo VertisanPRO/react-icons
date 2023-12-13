@@ -4,11 +4,7 @@ import React from "react";
 
 function Icon({ icon, name, highlightPattern = null }) {
   const copyToClipboard = () => {
-    const pattern = /[A-Z][a-z]{1,3}/g;
-    const iconType = name.match(pattern);
-
-    const copyToClipboardValue = `import { ${name} } from "@vertisanpro/react-icons/${iconType[0].toLowerCase()}"`;
-    copy(copyToClipboardValue);
+    copy(name);
     toast.success(`Copied '${name}' to clipboard`, {
       position: "bottom-center",
     });
