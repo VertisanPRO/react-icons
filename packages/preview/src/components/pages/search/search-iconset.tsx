@@ -16,7 +16,11 @@ export default function SearchIconSet({ icon, query, highlightPattern }) {
         );
         return (
           <>
-            {found.length > 0 && <h3 className="icon-name">{icon.name}</h3>}
+            {found.length > 0 && (
+              <h3 className="icon-name">
+                {icon.name} ({icon.id})
+              </h3>
+            )}
             {found.map((name) => (
               <Icon
                 key={name}
