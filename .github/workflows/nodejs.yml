@@ -52,8 +52,6 @@ jobs:
           bodyFile: "packages/react-icons/VERSIONS"
           token: ${{ secrets.GITHUB_TOKEN }}
           prerelease: ${{ contains(github.ref, 'snapshot') }}
-        if: contains(github.ref, 'tags/')
 
       - name: Publish react-icons
-        if: contains(github.ref, 'tags/')
         run: npm publish packages/_react-icons/*.tgz --access public
