@@ -166,6 +166,18 @@ export const icons: IconDefinition[] = [
           )}`,
         processWithSVGO: true,
       },
+      {
+        files: path.resolve(
+          __dirname,
+          "../../icons/material-design-icons/src/*/*/materialiconsround/24px.svg",
+        ),
+        formatter: (name, file) =>
+          `MdRound${camelcase(
+            file.replace(/^.*\/([^/]+)\/materialicons[^/]*\/24px.svg$/i, "$1"),
+            { pascalCase: true },
+          )}`,
+        processWithSVGO: true,
+      },
     ],
     projectUrl: "http://google.github.io/material-design-icons/",
     license: "Apache License Version 2.0",
@@ -493,6 +505,13 @@ export const icons: IconDefinition[] = [
         ),
         formatter: (name) => `HiMini${name}`,
       },
+      {
+        files: path.resolve(
+          __dirname,
+          "../../icons/heroicons/optimized/16/solid/*.svg",
+        ),
+        formatter: (name) => `HiMicro${name}`,
+      },
     ],
     projectUrl: "https://github.com/tailwindlabs/heroicons",
     license: "MIT",
@@ -654,11 +673,21 @@ export const icons: IconDefinition[] = [
     id: "tb",
     name: "Tabler Icons",
     contents: [
-      {
-        files: path.resolve(__dirname, "../../icons/tabler-icons/icons/*.svg"),
-        formatter: (name) => `Tb${name}`,
-      },
-    ],
+        {
+          files: path.resolve(
+            __dirname,
+            "../../icons/tabler-icons/icons/filled/*.svg",
+          ),
+          formatter: (name) => `Tb${name}`,
+        },
+        {
+          files: path.resolve(
+            __dirname,
+            "../../icons/tabler-icons/icons/outline/*.svg",
+          ),
+          formatter: (name) => `TbOutline${name}`,
+        },
+      ],
     projectUrl: "https://github.com/tabler/tabler-icons",
     license: "MIT",
     licenseUrl: "https://opensource.org/licenses/MIT",
