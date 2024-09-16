@@ -54,9 +54,9 @@ async function main() {
     }
     const { source } = icon;
     queue.add(async () => {
-        await gitCloneIcon(source, ctx);
-        progressBar.increment(); // Update the progress bar
-      });
+      await gitCloneIcon(source, ctx);
+      progressBar.increment(); // Update the progress bar
+    });
   }
 
   await queue.onIdle();
