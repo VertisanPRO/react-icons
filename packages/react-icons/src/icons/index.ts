@@ -673,21 +673,21 @@ export const icons: IconDefinition[] = [
     id: "tb",
     name: "Tabler Icons",
     contents: [
-        {
-          files: path.resolve(
-            __dirname,
-            "../../icons/tabler-icons/icons/filled/*.svg",
-          ),
-          formatter: (name) => `Tb${name}`,
-        },
-        {
-          files: path.resolve(
-            __dirname,
-            "../../icons/tabler-icons/icons/outline/*.svg",
-          ),
-          formatter: (name) => `TbOutline${name}`,
-        },
-      ],
+      {
+        files: path.resolve(
+          __dirname,
+          "../../icons/tabler-icons/icons/filled/*.svg",
+        ),
+        formatter: (name) => `Tb${name}`,
+      },
+      {
+        files: path.resolve(
+          __dirname,
+          "../../icons/tabler-icons/icons/outline/*.svg",
+        ),
+        formatter: (name) => `TbOutline${name}`,
+      },
+    ],
     projectUrl: "https://github.com/tabler/tabler-icons",
     license: "MIT",
     licenseUrl: "https://opensource.org/licenses/MIT",
